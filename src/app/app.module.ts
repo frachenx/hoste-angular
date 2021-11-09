@@ -16,13 +16,37 @@ import { AdminLoginComponent } from './main/admin-login/admin-login.component';
 import { AddCourseComponent } from './admin/add-course/add-course.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
 import { LogoutComponent } from './main/logout/logout.component';
+import { ManageCoursesComponent } from './admin/manage-courses/manage-courses.component';
+import { EditCourseComponent } from './admin/edit-course/edit-course.component';
+import { AddRoomComponent } from './admin/add-room/add-room.component';
+import { ManageRoomsComponent } from './admin/manage-rooms/manage-rooms.component';
+import { StudentRegistrationComponent } from './admin/student-registration/student-registration.component';
+import { ManageStudentsComponent } from './admin/manage-students/manage-students.component';
+import { ViewStudentComponent } from './admin/view-student/view-student.component';
+import { BookHostelComponent } from './user/book-hostel/book-hostel.component';
+import { RoomDetailsComponent } from './user/room-details/room-details.component';
+import { MyProfileComponent } from './user/my-profile/my-profile.component';
+import { PasswordComponent } from './user/password/password.component';
+
 
 const routes:Routes=[
   {path:'registration',component:RegistrationComponent},
   {path:'user-login',component:UserLoginComponent},
   {path:'admin-login',component:AdminLoginComponent},
   {path:'dashboard',component:DashboardComponent},
-  {path:'logout',component:LogoutComponent}
+  {path:'logout',component:LogoutComponent},
+  {path:'add-course',component:AddCourseComponent},
+  {path:'manage-courses',component:ManageCoursesComponent},
+  {path:'edit-course/:id',component:EditCourseComponent},
+  {path:'add-room',component:AddRoomComponent},
+  {path:'manage-rooms',component:ManageRoomsComponent},
+  {path:'student-registration',component:StudentRegistrationComponent},
+  {path:'manage-students',component:ManageStudentsComponent},
+  {path:'view-student/:id',component:ViewStudentComponent},
+  {path:'book-hostel',component:BookHostelComponent},
+  {path:'room-details',component:RoomDetailsComponent},
+  {path:'my-profile',component:MyProfileComponent},
+  {path:'change-password',component:PasswordComponent}
 ]
 
 
@@ -40,7 +64,18 @@ const routes:Routes=[
     AdminLoginComponent,
     AddCourseComponent,
     DashboardComponent,
-    LogoutComponent
+    LogoutComponent,
+    ManageCoursesComponent,
+    EditCourseComponent,
+    AddRoomComponent,
+    ManageRoomsComponent,
+    StudentRegistrationComponent,
+    ManageStudentsComponent,
+    ViewStudentComponent,
+    BookHostelComponent,
+    RoomDetailsComponent,
+    MyProfileComponent,
+    PasswordComponent
   ],
   imports: [
     BrowserModule,

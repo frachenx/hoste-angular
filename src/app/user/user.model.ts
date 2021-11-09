@@ -1,4 +1,5 @@
 export class User{
+    id:string;
     regNum:string;
     firstName:string;
     middleName:string;
